@@ -7,9 +7,9 @@ import {Footer} from "./components/Footer";
 class App extends React.Component {
     render() {
      return (
-         <div className="container">
+         <div className="container-fluid">
              <div className="row">
-                 <Header/>
+                 <Header />
                  <Home />
                  <Footer />
              </div>
