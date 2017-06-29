@@ -5,7 +5,7 @@ var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
 
 var config = {
-    entry: SRC_DIR+ "/app/index.js",
+    entry: SRC_DIR+ "/app/App.js",
     output: {
         path: DIST_DIR+ "/app",
         filename: "bundle.js",
@@ -20,6 +20,11 @@ var config = {
                 query: {
                     presets: ["react", "es2015", "stage-2"]
                 }
+            },
+            {
+                test: /\.scss$/,
+                include: SRC_DIR,
+                loader: ["style-loader", "css-loader","sass-loader"]
             }
         ]
     }

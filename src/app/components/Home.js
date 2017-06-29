@@ -11,10 +11,6 @@ export class Home extends React.Component {
         const { activeItem } = this.state
         return (
             <div>
-                <p>Home page</p>
-                <Button primary>Primary</Button>
-                <Button secondary>Secondary</Button>
-
                 {/*<Menu secondary>*/}
                 {/*<Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />*/}
                 {/*<Menu.Item name='messages' active={activeItem === 'messages'} onClick={this.handleItemClick} />*/}
@@ -26,8 +22,6 @@ export class Home extends React.Component {
                 {/*<Menu.Item name='logout' active={activeItem === 'logout'} onClick={this.handleItemClick} />*/}
                 {/*</Menu.Menu>*/}
                 {/*</Menu>*/}
-
-
             </div>
         );
 //Learning Tips: can only be one line!! Can be a string, number or javascript
