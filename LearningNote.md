@@ -7,6 +7,7 @@
 * vh-----Relative to 1% of the height of the viewport* Try it
 * vmin-----Relative to 1% of viewport's* smaller dimension Try it
 * vmax-----Relative to 1% of viewport's* larger dimension
+
 #2. Configure Sass in React Application
 * Run `npm install sass-loader style-loader css-loader` in the command line;  
 * Configure your loader in webpack.config.js like this way:  
