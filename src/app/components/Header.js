@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
-import {Icon, Menu, Button, Image, Card, Input} from 'semantic-ui-react'
-// import './Header.sass';
+import {Icon, Menu, Button, Input ,Segment, Divider} from 'semantic-ui-react'
 
 export class Header extends Component {
     state = {activeItem: 'gamesite'}
@@ -9,11 +8,9 @@ export class Header extends Component {
 
     render() {
         const {activeItem} = this.state
-        const src = 'app/assets/images/Bingjing-Xu.jpg'
-
         return (
-            <div>
-                <Menu className={"NaviHeader"} size="huge" secondary vertical floated>
+            <div className="asideNav">
+                <Menu className="navBar" secondary vertical>
                     <Menu.Item header
                                name='gamesite'
                                active={activeItem === 'gamesite'}
@@ -40,43 +37,13 @@ export class Header extends Component {
                         <Input icon='search' placeholder='Search mail...'/>
                     </Menu.Item>
                     <Menu.Item>
-                        <Button primary>Sign Up</Button>
+                        <Segment padded>
+                            <Button primary fluid>Login</Button>
+                            <Divider horizontal>Or</Divider>
+                            <Button secondary fluid>Sign Up Now</Button>
+                        </Segment>
                     </Menu.Item>
                 </Menu>
-
-
-                <div className="contentPage">
-                    <Card.Group itemsPerRow={4} children>
-                        <Card
-                            image={src}
-                            header='Elliot Baker'
-                            meta='Friend'
-                            description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-                            //extra={extra}
-                        />
-                        <Card
-                            image={src}
-                            header='Elliot Baker'
-                            meta='Friend'
-                            description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-                            //extra={extra}
-                        />
-                        <Card
-                            image={src}
-                            header='Elliot Baker'
-                            meta='Friend'
-                            description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-                            //extra={extra}
-                        />
-                        <Card
-                            image={src}
-                            header='Elliot Baker'
-                            meta='Friend'
-                            description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-                            //extra={extra}
-                        />
-                    </Card.Group>
-                </div>
             </div>
         );
     }

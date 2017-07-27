@@ -8,10 +8,10 @@ import "./assets/SCSS/main.scss";
 class App extends React.Component {
     render() {
         return (
-            <div>
+            <div className="mainviewport">
                 <Header />
                 <Home />
-                <Footer />
+                {/*<Footer />*/}
             </div>
         );
     }
